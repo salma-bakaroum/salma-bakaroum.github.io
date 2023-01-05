@@ -1,0 +1,111 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" type="text/css" href="salma.css">
+ <script src="salma.js"></script>
+</head>
+<body>
+<h2>BAKAROUM SALMA 's WebSite</h2>
+<p id="111"></p>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Paris')">HTML</button>
+  <button class="tablinks" onclick="openCity(event, 'London')">CSS</button>
+  
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">CALCULATRICE</button>
+  <button class="tablinks" onclick="openCity(event, 'dodo')">FACTORIELLE</button>
+</div>
+
+
+
+<div id="Paris" class="tabcontent">
+  <h3>HTML</h3>
+  <p class="cl1"><b>Qu’est-ce que le code HTML ?</b><br>
+    Le code HTML (pour HyperText Markup Language) est un code qui permet aux développeurs de donner des indications quant à la composition des pages web. C’est ce code qui permet de créer des interfaces digitales avec lesquelles sont en lien les internautes.<br>
+   <u> L’HTML : un code de structuration</u><br>
+    Le code HTML est appelé un langage de balisage (et non un langage de programmation). En effet, le but de ce code informatique est de structurer les éléments visuels qui composent une page web : textes, images, paragraphes, etc. Dans la construction d’une page internet, le code HTML permet de poser des balises qui seront ensuite mises en forme via d’autres outils de programmation.
+    
+    Structurellement, une page web est composée d’éléments textuels bruts dont la mise en page se base sur les balises HTML. Par exemple, l’éditeur de texte va considérer les indications du code HTML pour savoir comment présenter les titres, les sous-titres ou encore les listes à puces d’une page.
+    
+    Les développeurs doivent donc intégrer à leur code HTML des indications précises, comme des balises d’ouverture afin de signifier le début d’un élément. En pratique, pour créer un bloc de texte comme un paragraphe, le code HTML doit incorporer une balise d’ouverture spécifique à la forme du texte voulue. Pour indiquer le commencement d’un paragraphe, on code donc.
+    
+    Le code HTML a évolué : au début, il comprenait un grand nombre d’indications techniques pour mettre en forme les éléments textuels et leur apparence : mise en gras, en italique, etc. Désormais, ces composants sont pris en charge par des éditeurs de texte ou dans des feuilles de style. Toutefois, le langage HTML a gagné en technique sémantique.
+    
+    </p> 
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>CSS</h3>
+  <p class="cl1">Le terme CSS est l'acronyme anglais de Cascading Style Sheets qui peut se traduire par "feuilles de style en cascade". Le CSS est un langage informatique utilisé sur l'internet pour mettre en forme les fichiers HTML ou XML. Ainsi, 
+    les feuilles de style, aussi appelé les fichiers CSS, comprennent du code qui permet de gérer le design d'une page en HTML.<br>
+    L'avantage de l'utilisation d'un fichier CSS pour la mise en forme d'un site réside dans la possibilité de modifier tous les titres du site en une seule fois en modifiants une seule partie du fichier CSS. Sans ce fichier CSS, il serait nécessaire de 
+    modifier chaque titre de chaque page du site (difficilement envisageable pour les énormes sites de plusieurs milliers de pages).</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+   <fieldset>
+      
+      <h3> CALCULATRICE</h3>
+      <form name="FF">
+       <input type="text" name="CC"><br>
+       <input type="button" value="1" onClick="document.FF.CC.value+=1">
+       <input type="button" value="2" onClick="document.FF.CC.value+=2">
+       <input type="button" value="3" onClick="document.FF.CC.value+=3">
+       <input type="button" value="+" onClick="document.FF.CC.value+='+'"><br>
+       <input type="button" value="4" onClick="document.FF.CC.value+=4">
+       <input type="button" value="5" onClick="document.FF.CC.value+=5">
+       <input type="button" value="6" onClick="document.FF.CC.value+=6">
+       <input type="button" value="-" onClick="document.FF.CC.value+='-'"><br>
+       <input type="button" value="7" onClick="document.FF.CC.value+=7">
+       <input type="button" value="8" onClick="document.FF.CC.value+=8">
+       <input type="button" value="9" onClick="document.FF.CC.value+=9">
+       <input type="button" value="x" onClick="document.FF.CC.value+='*'"><br>
+       <input type="button" value="0" onClick="document.FF.CC.value+=0">
+       <input type="button" value="." onClick="document.FF.CC.value+='.'">
+       <input type="button" value="/" onClick="document.FF.CC.value+='/'">
+       <input type="button" value="=" onClick="document.FF.CC.value=eval(document.FF.CC.value)"><br>
+       <input type="button" value="C" onClick="document.FF.CC.value=''">
+       </form>
+       </fieldset>
+</div>
+<div id="dodo" class="tabcontent">
+  <h3>FACTORIELLE</h3>
+  <form name="form">
+
+    <p>Entrer Un Entier Positif : <input type="text" size="35" name="input" value="0">
+    
+    <p><input type="button" value="Factorielle" onclick="document.form.output.value=factorielle(document.form.input.value);">
+    
+    <p> Le Résultat : <input type="text" size="40" name="output" value="1">
+    
+    </form>
+    
+  <script>
+  
+  function factorielle(n)
+{
+if (n<0) {
+alert ("Veuillez Saisir Un Entier Positif ou null");
+return "### Erreur ###";
+}
+else {
+if (n == 0) {
+return 1;
+}
+else {
+return n * factorielle (n-1);
+}
+}
+}
+</script>
+ 
+</div>
+
+ 
+<p class="intro">Bonjour à vous, je suis<u> BAKAROUM SALMA</u>, une étudiante en deuxieme année informatique à la faculté des sciences de Rabat, et bienvenu sur mon premier site web.
+  Vous pouvez trouver plusieurs informations qui peut vous-aidez à savoir les bases de la technologie du web et de résoudre quelque opérations mathématiques.<br>
+   et pour plus d'informations vous pouvez consulter le site suivant: <a href="https://www.w3schools.com/">   W3Schools </a>
+  </p>
+ 
+   
+</body>
+</html> 
